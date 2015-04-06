@@ -20,9 +20,7 @@
         <td><%= movie.director %></td>
         <td><%= movie.rating %></td>
         <td><%= movie.comments %></td>
-        <% if user_signed_in? %>
         <td><%= link_to 'Show', movie %></td>
-        <% end %>
         <% if user_signed_in? %>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <% end %>
